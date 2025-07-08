@@ -1,4 +1,4 @@
-import { Container } from "../LanguageSwitch/Container/Container";
+import { Container } from "../Container/Container";
 import S from "./Footer.module.css";
 
 export function Footer() {
