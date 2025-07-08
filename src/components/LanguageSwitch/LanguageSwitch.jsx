@@ -1,26 +1,28 @@
 const languages = [
-    {
-        id: 'ru',
-        title: 'russki'
-    },
-    {
-        id: 'de',
-        title: 'Deutsch'
-    },
-    {
-        id: 'en',
-        title: 'English'
-    }
-]
+  {
+    id: "ru",
+    title: "Русский",
+  },
+  {
+    id: "de",
+    title: "Deutsch",
+  },
+  {
+    id: "en",
+    title: "English",
+  },
+];
 
 export function LanguageSwitch({ value }) {
-return (
+  return (
     <div>
-        <select>
-            {languages.map(language => (
-                <option key={language.id} selected={value === language.id}>{language.title}</option>
-            ))}
-        </select>
+      <select value={value}>
+        {languages.map((language) => (
+          <option key={language.id} value={language.id}>
+            {language.title}
+          </option>
+        ))}
+      </select>
     </div>
-)
+  );
 }
