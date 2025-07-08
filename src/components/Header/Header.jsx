@@ -1,4 +1,4 @@
-import { Container } from "../Container/Container";
+import { Container } from "../LanguageSwitch/Container/Container";
 import { LanguageSwitch } from "../LanguageSwitch/LanguageSwitch";
 import S from "./Header.module.css";
 
